@@ -14,9 +14,11 @@ html {
    ========================================================================== */
 /**
  * Remove the margin in all browsers.
+ * Sets font to Arial.
  */
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /**
@@ -309,138 +311,11 @@ template {
 }
 
 body {
-  position: relative;
-  font-family: Lato, Arial, sans-serif;
-  color: #4f4f4f;
-  background-color: #fcfcf7;
+  margin: 3rem 3rem;
 }
 
-h3, h4 {
-  letter-spacing: 0.05rem;
-  margin: 0.4rem 0;
-}
-
-h3 {
+header h1 {
+  color: darkslategrey;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  text-align: center;
-  margin: 0 0 30px 0px;
-}
-
-/* Layout Styles -----------------------------*/
-.container {
-  width: 95%;
-  margin: 3rem auto;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Gallery Styles -----------------------------*/
-.grid-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 380px;
-  background-color: #fff;
-  border: 1px solid #c4c4c4;
-  border-radius: 6px;
-  padding: 20px;
-  margin: 10px;
-}
-.grid-container:hover {
-  box-shadow: 0 0 8px 4px rgba(140, 140, 140, 0.2);
-}
-
-.profile-pic {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-
-.employee-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.city {
-  text-transform: capitalize;
-}
-
-.employee-info h4 {
-  font-size: 1.25rem;
-  text-transform: capitalize;
-}
-
-.employee-info p {
-  text-align: left;
-  color: #8e8e8e;
-}
-
-/* Overlay Styles ----------------------------*/
-#overlay {
-  display: none;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.x {
-  display: flex;
-  align-self: flex-end;
-  border: none;
-  background-color: inherit;
-  color: #4f4f4f;
-  font-size: 1.5rem;
-}
-
-.profile-pic-lg {
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  margin: 0 16px 16px;
-}
-
-#employee-details {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1.6px solid #c4c4c4;
-  border-radius: 6px;
-  background-color: #fff;
-  color: #8e8e8e;
-  margin: auto;
-  padding: 35px;
-}
-
-#employee-details h4 {
-  text-transform: capitalize;
-  color: #4f4f4f;
-  font-size: 1.4rem;
-}
-
-#employee-details p {
-  font-size: 1.15rem;
-  margin: 0.6rem 0;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid lightgray;
-  width: 100%;
-  margin: 30px 0;
-}
-
-.address {
-  text-transform: capitalize;
 }/*# sourceMappingURL=styles.css.map */
