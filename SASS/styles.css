@@ -311,6 +311,7 @@ template {
 }
 
 body {
+  position: relative;
   margin: 3rem 3rem;
 }
 
