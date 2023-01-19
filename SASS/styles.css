@@ -313,6 +313,7 @@ template {
 body {
   position: relative;
   margin: 3rem 3rem;
+  background-color: backgroundColor;
 }
 
 header {
@@ -329,7 +330,7 @@ header h1 {
   font-weight: 600;
   font-size: 1.2rem;
   text-align: center;
-  color: darkslategrey;
+  color: maingray;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
@@ -344,4 +345,44 @@ header .search {
   header .search {
     width: 32%;
   }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid maingray;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  border-color: maingray;
+  border: 1px solid maingray;
+  padding: 2rem;
+  margin: 1rem 0;
 }/*# sourceMappingURL=styles.css.map */

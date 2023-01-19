@@ -1,6 +1,7 @@
 body{
   position: relative;
   margin: 3rem 3rem;
+  background-color: $backgroundColor;
 }
 
 header{
@@ -14,12 +15,11 @@ header{
     font-weight: 600;
     font-size: 1.2rem;
     text-align: center;
-    color: darkslategrey;
+    color: $mainGray;
     text-transform: uppercase;
       @media (min-width: 768px) {
         text-align:left;
       }
-      
   }
   .search{
     margin: 0.67em 0;
@@ -40,12 +40,11 @@ header{
 
 .modal {
   width: 375px;
-  Techdegree
   margin: 15% auto auto;
   position: relative;
   text-align: center;
   background: #fff;
-  border: 1px solid #778;
+  border: 1px solid $mainGray;
   border-radius: 5px;
   padding: 30px 20px;
   }
@@ -59,4 +58,24 @@ header{
 
 .hidden{
   display: none;
+} 
+
+.card{
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 3rem;
+  border-color: $mainGray;
+  border: 3px solid $mainGray;
+  @media (min-width: 768px) {
+    width:45%;
+  }
+  @media (min-width: 768px) {
+    width:30%;
+    flex-direction: row;
+  }
+  &:hover {
+    box-shadow: 0 0 8px 4px rgba(140, 140, 140, 0.2);
+  }
 }
