@@ -313,7 +313,7 @@ template {
 body {
   position: relative;
   margin: 3rem 3rem;
-  background-color: backgroundColor;
+  background-color: #fcfcfc;
 }
 
 header {
@@ -330,7 +330,7 @@ header h1 {
   font-weight: 600;
   font-size: 1.2rem;
   text-align: center;
-  color: maingray;
+  color: #778;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
@@ -362,7 +362,7 @@ header .search {
   position: relative;
   text-align: center;
   background: #fff;
-  border: 1px solid maingray;
+  border: 1px solid #778;
   border-radius: 5px;
   padding: 30px 20px;
 }
@@ -381,8 +381,33 @@ header .search {
 .card {
   display: flex;
   width: 100%;
-  border-color: maingray;
-  border: 1px solid maingray;
   padding: 2rem;
   margin: 1rem 0;
+  border-radius: 3rem;
+  border-color: #778;
+  border: 1px solid #778;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    width: 30%;
+    flex-direction: row;
+  }
+}
+.card:hover {
+  box-shadow: 0 0 8px 4px rgba(140, 140, 140, 0.2);
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.text-container {
+  text-align: center;
+  padding-top: 1rem;
 }/*# sourceMappingURL=styles.css.map */

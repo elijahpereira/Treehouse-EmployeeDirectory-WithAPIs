@@ -67,15 +67,25 @@ header{
   margin: 1rem 0;
   border-radius: 3rem;
   border-color: $mainGray;
-  border: 3px solid $mainGray;
+  border: 1px solid $mainGray;
+  justify-content: center;
   @media (min-width: 768px) {
     width:45%;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     width:30%;
     flex-direction: row;
   }
   &:hover {
     box-shadow: 0 0 8px 4px rgba(140, 140, 140, 0.2);
   }
+}
+
+.avatar{
+  border-radius: 50%;
+}
+
+.text-container{
+  text-align: center;
+  padding-top: 1rem;
 }
