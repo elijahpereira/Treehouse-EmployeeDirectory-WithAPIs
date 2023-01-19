@@ -5,13 +5,25 @@ body{
 header{
   display:flex;
   justify-content:space-between;
+  flex-direction: column;
+    @media (min-width: 768px){
+      flex-direction: row;
+    }
   h1{
-    color: darkslategrey;
+    font-weight: 600;
     font-size: 1.2rem;
+    text-align: center;
+    color: darkslategrey;
     text-transform: uppercase;
+      @media (min-width: 768px) {
+        text-align:left;
+      }
+      
   }
   .search{
     margin: 0.67em 0;
-    width:32%;
+      @media (min-width: 768px) {
+        width:32%;
+      }
   }
 }

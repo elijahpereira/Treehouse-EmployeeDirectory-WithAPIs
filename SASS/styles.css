@@ -317,13 +317,30 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
 }
 header h1 {
-  color: darkslategrey;
+  font-weight: 600;
   font-size: 1.2rem;
+  text-align: center;
+  color: darkslategrey;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  header h1 {
+    text-align: left;
+  }
 }
 header .search {
   margin: 0.67em 0;
-  width: 32%;
+}
+@media (min-width: 768px) {
+  header .search {
+    width: 32%;
+  }
 }/*# sourceMappingURL=styles.css.map */
