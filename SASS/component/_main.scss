@@ -59,6 +59,12 @@ header{
 .hidden{
   display: none;
 } 
+main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .card{
   display: flex;
@@ -75,6 +81,7 @@ header{
   @media (min-width: 1024px) {
     width:30%;
     flex-direction: row;
+    margin: 1rem .5rem;
   }
   &:hover {
     box-shadow: 0 0 8px 4px rgba(140, 140, 140, 0.2);

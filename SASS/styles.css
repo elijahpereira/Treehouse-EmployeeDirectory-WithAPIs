@@ -378,6 +378,13 @@ header .search {
   display: none;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .card {
   display: flex;
   width: 100%;
@@ -397,6 +404,7 @@ header .search {
   .card {
     width: 30%;
     flex-direction: row;
+    margin: 1rem 0.5rem;
   }
 }
 .card:hover {
