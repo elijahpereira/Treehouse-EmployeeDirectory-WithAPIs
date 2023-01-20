@@ -390,7 +390,7 @@ main {
   width: 100%;
   padding: 2rem;
   margin: 1rem 0;
-  border-radius: 3rem;
+  border-radius: 1rem;
   border-color: #778;
   border: 1px solid #778;
   justify-content: center;
@@ -398,13 +398,15 @@ main {
 @media (min-width: 768px) {
   .card {
     width: 45%;
+    margin: 5% 0;
   }
 }
 @media (min-width: 1024px) {
   .card {
-    width: 30%;
+    width: 32%;
+    margin: 1% 0;
     flex-direction: row;
-    margin: 1rem 0.5rem;
+    padding: 0.75rem 1.5rem;
   }
 }
 .card:hover {
@@ -423,4 +425,24 @@ main {
 .text-container {
   text-align: center;
   padding-top: 1rem;
+}
+@media (min-width: 1024px) {
+  .text-container {
+    padding-top: 0;
+    padding-left: 1rem;
+    text-align: start;
+    font-size: 0.55rem;
+  }
+}
+
+p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

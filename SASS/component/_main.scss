@@ -71,17 +71,19 @@ main{
   width: 100%;
   padding: 2rem;
   margin: 1rem 0;
-  border-radius: 3rem;
+  border-radius: 1rem;
   border-color: $mainGray;
   border: 1px solid $mainGray;
   justify-content: center;
   @media (min-width: 768px) {
     width:45%;
+    margin: 5% 0;
   }
   @media (min-width: 1024px) {
-    width:30%;
+    width:32%;
+    margin: 1% 0;
     flex-direction: row;
-    margin: 1rem .5rem;
+    padding: .75rem 1.5rem;
   }
   &:hover {
     box-shadow: 0 0 8px 4px rgba(140, 140, 140, 0.2);
@@ -98,4 +100,22 @@ main{
 .text-container{
   text-align: center;
   padding-top: 1rem;
+  @media (min-width: 1024px){
+    padding-top: 0;
+    padding-left: 1rem;
+    text-align: start;
+    font-size: .55rem;
+  }
+}
+
+p{
+  margin-bottom: 0;
+}
+
+h2{
+  @media (min-width: 1024px) {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
 }
