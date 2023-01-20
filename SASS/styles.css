@@ -414,6 +414,11 @@ main {
 .avatar {
   border-radius: 50%;
 }
+@media (min-width: 1024px) {
+  .avatar {
+    height: 7rem;
+  }
+}
 
 .text-container {
   text-align: center;
