@@ -70,18 +70,22 @@ main{
   display: flex;
   width: 100%;
   padding: 2rem;
-  margin: 1rem 0;
+  margin: .5rem 0;
   border-radius: 1rem;
   border-color: $mainGray;
   border: 1px solid $mainGray;
   justify-content: center;
-  @media (min-width: 768px) {
-    width:45%;
-    margin: 5% 0;
+  //Resize cards when title goes from 2 lines to 1
+  @media(min-width: 513px){
+    width:48%;
   }
+  //tablet styles
+  @media (min-width: 768px) {
+    width:31%;
+  }
+  //laptop and desktop styles
   @media (min-width: 1024px) {
     width:32%;
-    margin: 1% 0;
     flex-direction: row;
     padding: .75rem 1.5rem;
   }
@@ -95,13 +99,16 @@ main{
   @media (min-width: 1024px){
     height: 7rem;
   }
+  @media (min-width: 1440px) {
+    height: 10rem;
+  }
 }
 
 .text-container{
   text-align: center;
   padding-top: 1rem;
   @media (min-width: 1024px){
-    padding-top: 0;
+    padding-top: 2rem;
     padding-left: 1rem;
     text-align: start;
     font-size: .55rem;
@@ -110,6 +117,9 @@ main{
 
 p{
   margin-bottom: 0;
+  @media (min-width: 1440px) {
+    font-size: 1rem;
+  }
 }
 
 h2{
@@ -117,5 +127,8 @@ h2{
     font-size: .9rem;
     font-weight: 600;
     margin-bottom: 0;
+  }
+  @media (min-width: 1440px) {
+    font-size: 1.5rem;
   }
 }

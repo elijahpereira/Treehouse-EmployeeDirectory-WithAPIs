@@ -389,22 +389,25 @@ main {
   display: flex;
   width: 100%;
   padding: 2rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   border-radius: 1rem;
   border-color: #778;
   border: 1px solid #778;
   justify-content: center;
 }
+@media (min-width: 513px) {
+  .card {
+    width: 48%;
+  }
+}
 @media (min-width: 768px) {
   .card {
-    width: 45%;
-    margin: 5% 0;
+    width: 31%;
   }
 }
 @media (min-width: 1024px) {
   .card {
     width: 32%;
-    margin: 1% 0;
     flex-direction: row;
     padding: 0.75rem 1.5rem;
   }
@@ -421,6 +424,11 @@ main {
     height: 7rem;
   }
 }
+@media (min-width: 1440px) {
+  .avatar {
+    height: 10rem;
+  }
+}
 
 .text-container {
   text-align: center;
@@ -428,7 +436,7 @@ main {
 }
 @media (min-width: 1024px) {
   .text-container {
-    padding-top: 0;
+    padding-top: 2rem;
     padding-left: 1rem;
     text-align: start;
     font-size: 0.55rem;
@@ -438,11 +446,21 @@ main {
 p {
   margin-bottom: 0;
 }
+@media (min-width: 1440px) {
+  p {
+    font-size: 1rem;
+  }
+}
 
 @media (min-width: 1024px) {
   h2 {
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  h2 {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
