@@ -88,6 +88,7 @@ main{
     width:32%;
     flex-direction: row;
     padding: .75rem 1.5rem;
+    justify-content: start;
   }
   &:hover {
     box-shadow: 0 0 8px 4px rgba(140, 140, 140, 0.2);
