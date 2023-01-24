@@ -1,10 +1,10 @@
 body{
   position: relative;
-  margin: 3rem 3rem;
   background-color: $backgroundColor;
 }
 
 header{
+  padding: 3rem 3rem 0 3rem;
   display:flex;
   justify-content:space-between;
   flex-direction: column;
@@ -29,32 +29,9 @@ header{
   }
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(100, 100, 100, 0.4)
-  }
-
-.modal {
-  width: 375px;
-  margin: 15% auto auto;
-  position: relative;
-  text-align: center;
-  background: #fff;
-  border: 1px solid $mainGray;
-  border-radius: 5px;
-  padding: 30px 20px;
-  }
-
-.modal-close {
-  position: absolute;
-  right: 15px;
-  top: 5px;
-  cursor: pointer;
-  }
+.grid-container{
+  margin: 3rem 3rem;
+}
 
 .hidden{
   display: none;
@@ -98,10 +75,13 @@ main{
 .avatar{
   border-radius: 50%;
   @media (min-width: 1024px){
-    height: 7rem;
+    margin:auto;
+    height: 100px;
+    widtH: 100px;
   }
   @media (min-width: 1440px) {
-    height: 10rem;
+    width: 130px;
+    height: 130px;
   }
 }
 
@@ -109,8 +89,8 @@ main{
   text-align: center;
   padding-top: 1rem;
   @media (min-width: 1024px){
-    padding-top: 2rem;
-    padding-left: 1rem;
+    padding-top: 0rem;
+    margin: auto;
     text-align: start;
     font-size: .55rem;
   }
@@ -118,6 +98,7 @@ main{
 
 p{
   margin-bottom: 0;
+  color: $bodyColor;
   @media (min-width: 1440px) {
     font-size: 1rem;
   }
@@ -131,5 +112,58 @@ h2{
   }
   @media (min-width: 1440px) {
     font-size: 1.5rem;
+  }
+}
+
+//--Lightbox Styles--//
+.lightbox-text{
+    text-align: center;
+  }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4)
+  }
+
+.modal {
+  width: 375px;
+  height: auto;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid $mainGray;
+  border-radius: 5px;
+  padding: 30px 20px;
+  }
+
+.modal-close {
+  position: absolute;
+  background-color:$backgroundColor;
+  right: 0px;
+  top: 5px;
+  cursor: pointer;
+  span{
+    width:auto;
+  }
+  }
+
+  button.modal-close {
+    border: none;
+}
+
+.modal-content{
+  --mdb-modal-box-shadow: 0;
+}
+
+.lightbox-close{
+  fill: $backgroundColor;
+  &:hover{
+    transition-duration: .5s;
+    filter: invert(.5);
   }
 }

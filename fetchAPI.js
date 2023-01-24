@@ -4,6 +4,7 @@ const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
 email, location, phone, dob &noinfo &nat=US`
 const gridContainer = document.querySelector(".grid-container");
 const overlay = document.querySelector(".overlay");
+const modal = document.querySelector(".modal");
 const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
 
@@ -47,7 +48,7 @@ function displayModal(index) {
     let date = new Date(dob.date);
     const modalHTML = `
     <img class="avatar" src="${picture.large}" />
-    <div class="text-container">
+    <div class="text-container lightbox-text">
     <h2 class="name">${name.first} ${name.last}</h2>
     <p class="email">${email}</p>
     <p class="address">${city}</p>
@@ -60,6 +61,7 @@ function displayModal(index) {
     `;
     overlay.classList.remove("hidden");
     modalContainer.innerHTML = modalHTML;
+    modal.style.display = "block";
     }
     
 
