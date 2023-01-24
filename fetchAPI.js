@@ -47,16 +47,24 @@ function displayModal(index) {
     }, picture } = employees[index];
     let date = new Date(dob.date);
     const modalHTML = `
-    <img class="avatar" src="${picture.large}" />
-    <div class="text-container lightbox-text">
-    <h2 class="name">${name.first} ${name.last}</h2>
-    <p class="email">${email}</p>
-    <p class="address">${city}</p>
-    <hr />
-    <p>${phone}</p>
-    <p class="address">${street}, ${state} ${postcode}</p>
-    <p>Birthday:
-    ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
+    
+    <div>
+
+        <img class="avatar" src="${picture.large}" />
+        <div class="text-container lightbox-text">
+            <h2 class="name">${name.first} ${name.last}</h2>
+            <p class="email">${email}</p>
+            <p class="address">${city}</p>
+            <hr />
+            <p>${phone}</p>
+            <p class="address">${street}, ${state} ${postcode}</p>
+            <p>Birthday:
+            ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
+        </div>
+        <div class="lightbox-arrow">
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-right"></i>
+        </div>
     </div>
     `;
     overlay.classList.remove("hidden");

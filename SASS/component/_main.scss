@@ -89,7 +89,7 @@ main{
   text-align: center;
   padding-top: 1rem;
   @media (min-width: 1024px){
-    padding-top: 0rem;
+    padding: 1rem;
     margin: auto;
     text-align: start;
     font-size: .55rem;
@@ -166,4 +166,8 @@ h2{
     transition-duration: .5s;
     filter: invert(.5);
   }
+}
+
+.lightbox-arrow {
+  padding-top: 1rem;
 }

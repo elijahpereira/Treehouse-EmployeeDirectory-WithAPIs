@@ -417,7 +417,7 @@ main {
 }
 @media (min-width: 1024px) {
   .text-container {
-    padding-top: 0rem;
+    padding: 1rem;
     margin: auto;
     text-align: start;
     font-size: 0.55rem;
@@ -497,4 +497,8 @@ button.modal-close {
 .lightbox-close:hover {
   transition-duration: 0.5s;
   filter: invert(0.5);
+}
+
+.lightbox-arrow {
+  padding-top: 1rem;
 }/*# sourceMappingURL=styles.css.map */
