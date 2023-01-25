@@ -91,7 +91,7 @@ modalClose.addEventListener('click', () => {
 //-----------------------//
 //----ARROW FUNCTION-----//
 //-----------------------//
-const arrowContainer = document.querySelector("lightbox-arrow");
+const arrowContainer = document.querySelector(".lightbox-arrow");
 const arrowLeft = document.querySelector(".fa-arrow-left");
 const arrowRight = document.querySelector(".fa-arrow-right");
 
