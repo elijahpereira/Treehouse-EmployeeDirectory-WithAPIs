@@ -100,12 +100,12 @@ arrowContainer.addEventListener('click', e => {
     if (e.target === arrowLeft) {
         const card = e.target.closest(".card");
         const index = card.getAttribute('data-index');
-        console.log(index);
+        index -= 1;
         displayModal(index);
     } else if (e.target === arrowRight) {
         const card = e.target.closest(".card");
         const index = card.getAttribute('data-index');
-        console.log(index);
+        index += 1;
         displayModal(index);
     }
 });
