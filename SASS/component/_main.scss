@@ -167,7 +167,8 @@ h2{
     filter: invert(.5);
   }
 }
-
-.lightbox-arrow {
-  padding-top: 1rem;
-}
+//--Lightbox Arrow Styles--//
+  i.fas.fa-arrow-left,
+  i.fas.fa-arrow-right{
+    padding:1rem;
+  }
