@@ -71,8 +71,9 @@ function displayModal(index) {
     modalContainer.innerHTML = modalHTML;
     modal.style.display = "block";
     }
-    
-
+//-----------------------------//    
+//--FUNCTION TO MAKE LIGHTBOX--//
+//-----------------------------//
 gridContainer.addEventListener('click', e => {
     // make sure the click is not on the gridContainer itself
     if (e.target !== gridContainer) {
@@ -81,8 +82,30 @@ gridContainer.addEventListener('click', e => {
     const index = card.getAttribute('data-index');
     displayModal(index);
     }
-    });
+});
 
 modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
     });
+
+//-----------------------//
+//----ARROW FUNCTION-----//
+//-----------------------//
+const arrowContainer = document.querySelector("lightbox-arrow");
+const arrowLeft = document.querySelector(".fa-arrow-left");
+const arrowRight = document.querySelector(".fa-arrow-right");
+
+arrowContainer.addEventListener('click', e => {
+    // make sure the click is not on the gridContainer itself
+    if (e.target === arrowLeft) {
+        const card = e.target.closest(".card");
+        const index = card.getAttribute('data-index');
+        console.log(index);
+        displayModal(index);
+    } else if (e.target === arrowRight) {
+        const card = e.target.closest(".card");
+        const index = card.getAttribute('data-index');
+        console.log(index);
+        displayModal(index);
+    }
+});
