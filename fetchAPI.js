@@ -61,10 +61,6 @@ function displayModal(index) {
             <p>Birthday:
             ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
         </div>
-        <div class="lightbox-arrow">
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-right"></i>
-        </div>
     </div>
     `;
     overlay.classList.remove("hidden");
@@ -81,6 +77,7 @@ gridContainer.addEventListener('click', e => {
     const card = e.target.closest(".card");
     const index = card.getAttribute('data-index');
     displayModal(index);
+    return(index);
     }
 });
 
@@ -99,12 +96,12 @@ arrowContainer.addEventListener('click', e => {
     // make sure the click is not on the gridContainer itself
     if (e.target === arrowLeft) {
         const card = e.target.closest(".card");
-        const index = card.getAttribute('data-index');
+        let index = card.getAttribute('data-index');
         index -= 1;
         displayModal(index);
     } else if (e.target === arrowRight) {
         const card = e.target.closest(".card");
-        const index = card.getAttribute('data-index');
+        let index = card.getAttribute('data-index');
         index += 1;
         displayModal(index);
     }
