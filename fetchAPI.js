@@ -50,7 +50,7 @@ function displayModal(index) {
     let date = new Date(dob.date);
     const modalHTML = `
     
-    <div>
+    <div class= "lightbox" data-index="${index}">
 
         <img class="avatar" src="${picture.large}" />
         <div class="text-container lightbox-text">
@@ -101,10 +101,11 @@ arrowContainer.addEventListener('click', e => {
         index -= 1;
         displayModal(index);
     } else if (e.target === arrowRight) {
-        const card = e.target.closest(".card");
-        let index = card.getAttribute('data-index');
-        index += 1;
-        displayModal(index);
+        const lightbox = e.target.closest(".lightbox");
+        // let index = card.getAttribute('.data-index');
+        // index += 1;
+        // displayModal(index);
+        console.log(`${lightbox}`);
     }
 });
 
