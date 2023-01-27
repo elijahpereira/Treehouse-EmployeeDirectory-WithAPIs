@@ -121,6 +121,11 @@ search.addEventListener("input",(e) => {
         const email= user.email;
 
         const searched = first.includes(value) || email.includes(value) || last.includes(value);
-        user.element.classList.toggle("hide", !searched);
+        // user.element.classList.toggle("hide", !searched);
+        if(searched){
+            user.style.display = "flex"
+        } else {
+            user.style.display = "none"
+        }
     })
 });
