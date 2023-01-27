@@ -502,4 +502,8 @@ button.modal-close {
 i.fas.fa-arrow-left,
 i.fas.fa-arrow-right {
   padding: 1rem;
+}
+
+.hide {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

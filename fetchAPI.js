@@ -7,6 +7,8 @@ const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
+const search =document.querySelector(`[search-bar]`);
+
 
 //===Fetch Function ===//
 fetch('https://randomuser.me/api/?results=12&nat=us')
@@ -57,7 +59,7 @@ function displayModal(index) {
             <p class="address">${city}</p>
             <hr />
             <p>${phone}</p>
-            <p class="address">${street}, ${state} ${postcode}</p>
+            <p class="address">${street.number} ${street.name}, ${state} ${postcode}</p>
             <p>Birthday:
             ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
         </div>
@@ -77,7 +79,6 @@ gridContainer.addEventListener('click', e => {
     const card = e.target.closest(".card");
     const index = card.getAttribute('data-index');
     displayModal(index);
-    return(index);
     }
 });
 
@@ -105,4 +106,20 @@ arrowContainer.addEventListener('click', e => {
         index += 1;
         displayModal(index);
     }
+});
+
+//------------------------//
+//----SEARCH FUNCTION-----//
+//------------------------//
+
+search.addEventListener("input",(e) => {
+    const value = e.target.value;
+    employees.forEach(user => {
+        const first = user.name.first;
+        const last = user.name.last
+        const email= user.email;
+
+        const searched = first.includes(value) || email.includes(value) || last.includes(value);
+        user.element.classList.toggle("hide", !searched);
+    })
 });
