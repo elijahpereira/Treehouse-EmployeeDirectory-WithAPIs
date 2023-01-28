@@ -114,14 +114,16 @@ arrowContainer.addEventListener('click', e => {
 //------------------------//
 
 search.addEventListener("input",(e) => {
-    const employeeCards = document.querySelectorAll('card');
+    const employeeCards = document.querySelectorAll('.card');
     
     employeeCards.forEach((card) => {
-        const name = employee.querySelector('.name').textContent;
-        if(name.includes(value)) {
-        employee.style.display = 'flex';
+        const name = card.querySelector('.name').textContent;
+        const email = card.querySelector('.email').textContent;
+        const address = card.querySelector('.address').textContent;
+        if(name.includes(e.target.value) || email.includes(e.target.value)) {
+        card.style.display = 'flex';
         } else {
-        employee.style.display = 'none';
+        card.style.display = 'none';
         }
     })
      });
