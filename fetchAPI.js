@@ -115,16 +115,16 @@ arrowContainer.addEventListener('click', e => {
 
 search.addEventListener("input",(e) => {
     const employeeCards = document.querySelectorAll('card');
-
+    
     employeeCards.forEach((card) => {
         const name = employee.querySelector('.name').textContent;
-        if(name.first.includes(value) || name.last.includes(value) || email.includes(value)) {
+        if(name.includes(value)) {
         employee.style.display = 'flex';
         } else {
         employee.style.display = 'none';
         }
     })
-    });
+     });
      
 //     const value = e.target.value;
 
