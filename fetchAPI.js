@@ -114,18 +114,31 @@ arrowContainer.addEventListener('click', e => {
 //------------------------//
 
 search.addEventListener("input",(e) => {
-    const value = e.target.value;
-    employees.forEach(user => {
-        const first = user.name.first;
-        const last = user.name.last
-        const email= user.email;
+    const employeeCards = document.querySelectorAll('card');
 
-        const searched = first.includes(value) || email.includes(value) || last.includes(value);
-        // user.element.classList.toggle("hide", !searched);
-        if(searched){
-            user.style.display = "flex"
+    employeeCards.forEach((card) => {
+        const name = employee.querySelector('.name').textContent;
+        if(name.first.includes(value) || name.last.includes(value) || email.includes(value)) {
+        employee.style.display = 'flex';
         } else {
-            user.style.display = "none"
+        employee.style.display = 'none';
         }
     })
-});
+    });
+     
+//     const value = e.target.value;
+
+//     employees.forEach(user => {
+//         const first = user.name.first;
+//         const last = user.name.last
+//         const email= user.email;
+
+//         const searched = first.includes(value) || email.includes(value) || last.includes(value);
+//         // user.element.classList.toggle("hide", !searched);
+//         if(searched){
+//             user.style.display = "flex"
+//         } else {
+//             user.style.display = "none"
+//         }
+//     })
+// });
