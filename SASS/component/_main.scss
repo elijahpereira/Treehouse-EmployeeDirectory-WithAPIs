@@ -30,7 +30,7 @@ header{
 }
 
 .grid-container{
-  margin: 3rem 3rem;
+  margin: 1rem 3rem;
 }
 
 .hidden{
@@ -68,6 +68,7 @@ main{
     justify-content: start;
   }
   &:hover {
+    cursor:pointer;
     box-shadow: 0 0 8px 4px rgba(140, 140, 140, 0.2);
   }
 }
@@ -171,6 +172,9 @@ h2{
   i.fas.fa-arrow-left,
   i.fas.fa-arrow-right{
     padding:1rem;
+    &:hover{
+      cursor: pointer;
+    }
   }
 
   //-- Search Styles--//

@@ -120,27 +120,10 @@ search.addEventListener("input",(e) => {
         const name = card.querySelector('.name').textContent;
         const email = card.querySelector('.email').textContent;
         const address = card.querySelector('.address').textContent;
-        if(name.includes(e.target.value) || email.includes(e.target.value)) {
+        if(name.includes(e.target.value) || email.includes(e.target.value) || address.includes(e.target.value)) {
         card.style.display = 'flex';
         } else {
         card.style.display = 'none';
         }
     })
      });
-     
-//     const value = e.target.value;
-
-//     employees.forEach(user => {
-//         const first = user.name.first;
-//         const last = user.name.last
-//         const email= user.email;
-
-//         const searched = first.includes(value) || email.includes(value) || last.includes(value);
-//         // user.element.classList.toggle("hide", !searched);
-//         if(searched){
-//             user.style.display = "flex"
-//         } else {
-//             user.style.display = "none"
-//         }
-//     })
-// });

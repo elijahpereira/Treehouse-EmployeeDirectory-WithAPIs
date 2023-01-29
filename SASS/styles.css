@@ -348,7 +348,7 @@ header .search {
 }
 
 .grid-container {
-  margin: 3rem 3rem;
+  margin: 1rem 3rem;
 }
 
 .hidden {
@@ -391,6 +391,7 @@ main {
   }
 }
 .card:hover {
+  cursor: pointer;
   box-shadow: 0 0 8px 4px rgba(140, 140, 140, 0.2);
 }
 
@@ -502,4 +503,8 @@ button.modal-close {
 i.fas.fa-arrow-left,
 i.fas.fa-arrow-right {
   padding: 1rem;
+}
+i.fas.fa-arrow-left:hover,
+i.fas.fa-arrow-right:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
