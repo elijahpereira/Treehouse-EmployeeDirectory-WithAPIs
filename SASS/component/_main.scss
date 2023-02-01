@@ -131,7 +131,7 @@ h2{
   }
 
 .modal {
-  width: 375px;
+  width: 100%;
   height: auto;
   margin: 15% auto auto;
   position: relative;
@@ -140,6 +140,9 @@ h2{
   border: 1px solid $mainGray;
   border-radius: 5px;
   padding: 30px 20px;
+  @media (min-width: 375px){
+    width: 375px;
+  }
   }
 
 .modal-close {

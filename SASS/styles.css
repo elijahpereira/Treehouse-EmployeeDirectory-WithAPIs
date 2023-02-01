@@ -462,7 +462,7 @@ p {
 }
 
 .modal {
-  width: 375px;
+  width: 100%;
   height: auto;
   margin: 15% auto auto;
   position: relative;
@@ -471,6 +471,11 @@ p {
   border: 1px solid #778;
   border-radius: 5px;
   padding: 30px 20px;
+}
+@media (min-width: 375px) {
+  .modal {
+    width: 375px;
+  }
 }
 
 .modal-close {
