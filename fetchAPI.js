@@ -102,7 +102,7 @@ arrowContainer.addEventListener('click', e => {
         displayModal(index);
     } else if (e.target === arrowRight) {
         const lightbox = e.target.closest(".lightbox");
-        let index = card.getAttribute('.data-index');
+        let index = lightbox.getAttribute('.data-index');
         index += 1;
         displayModal(index);
         console.log(`${lightbox}`);
