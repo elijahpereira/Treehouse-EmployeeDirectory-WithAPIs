@@ -94,20 +94,18 @@ const arrowLeft = document.querySelector(".fa-arrow-left");
 const arrowRight = document.querySelector(".fa-arrow-right");
 
 arrowContainer.addEventListener('click', e => {
+    const lightbox = document.querySelector(".modal-content .lightbox");
     // make sure the click is not on the gridContainer itself
     if (e.target === arrowLeft) {
-        const card = e.target.closest(".card");
-        let index = card.getAttribute('data-index');
-        index -= 1;
-        displayModal(index);
+      let index = Number(lightbox.getAttribute('data-index'));
+      index -= 1;
+      displayModal(index);
     } else if (e.target === arrowRight) {
-        const lightbox = e.target.closest(".lightbox");
-        let index = lightbox.getAttribute('.data-index');
-        index += 1;
-        displayModal(index);
-        console.log(`${lightbox}`);
+      let index = Number(lightbox.getAttribute('data-index'));
+      index += 1;
+      displayModal(index);
     }
-});
+  });
 
 //------------------------//
 //----SEARCH FUNCTION-----//
