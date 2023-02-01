@@ -95,14 +95,22 @@ const arrowRight = document.querySelector(".fa-arrow-right");
 
 arrowContainer.addEventListener('click', e => {
     const lightbox = document.querySelector(".modal-content .lightbox");
+    const minIndex = -1;
+    const maxIndex = 11;
     // make sure the click is not on the gridContainer itself
     if (e.target === arrowLeft) {
       let index = Number(lightbox.getAttribute('data-index'));
       index -= 1;
+      if (index <= minIndex){
+        index= 11;
+      }
       displayModal(index);
     } else if (e.target === arrowRight) {
       let index = Number(lightbox.getAttribute('data-index'));
       index += 1;
+      if (index >= maxIndex){
+        index= 0;
+      }
       displayModal(index);
     }
   });
