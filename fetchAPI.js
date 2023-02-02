@@ -82,6 +82,7 @@ gridContainer.addEventListener('click', e => {
     }
 });
 
+//Event Listeners to hide the lightbox76
 modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
     });
@@ -92,9 +93,13 @@ overlay.addEventListener('click', () => {
     }
 });
 
+// attempt to made the escape function
 // overlay.addEventListener('keydown', () => {
-    // if (event.key===)
-// }
+//     if (event.key==="Escape"){
+//         console.log('success');
+// }});
+
+
 
 //-----------------------//
 //----ARROW FUNCTION-----//
