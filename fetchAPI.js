@@ -86,6 +86,16 @@ modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
     });
 
+overlay.addEventListener('click', () => {
+    if (event.target === overlay){
+        overlay.classList.add("hidden");
+    }
+});
+
+// overlay.addEventListener('keydown', () => {
+    // if (event.key===)
+// }
+
 //-----------------------//
 //----ARROW FUNCTION-----//
 //-----------------------//
