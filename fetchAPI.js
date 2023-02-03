@@ -94,12 +94,16 @@ overlay.addEventListener('click', () => {
 });
 
 // attempt to made the escape function
-// overlay.addEventListener('keydown', () => {
-//     if (event.key==="Escape"){
-//         console.log('success');
-// }});
+document.addEventListener('keydown', (event) => {
+     if (event.key==="Escape"){
+        overlay.classList.add("hidden");
+}});
 
-
+// overlay.addEventListener("keydown", (event) => {
+//     if (event.keyCode === "Escape") {
+//         console.log("ski");
+//     }
+//   });
 
 //-----------------------//
 //----ARROW FUNCTION-----//
