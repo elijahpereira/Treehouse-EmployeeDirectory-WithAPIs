@@ -160,7 +160,7 @@ search.addEventListener("input",(e) => {
         const name = card.querySelector('.name').textContent;
         const email = card.querySelector('.email').textContent;
         const address = card.querySelector('.address').textContent;
-        if(name.includes(e.target.value) || email.includes(e.target.value) || address.includes(e.target.value)) {
+        if(name.includes(e.target.value.toLowerCase()) || email.includes(e.target.value.toLowerCase()) || address.includes(e.target.value.toLowerCase())) {
         card.style.display = 'flex';
         } else {
         card.style.display = 'none';
